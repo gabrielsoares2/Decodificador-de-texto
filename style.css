@@ -1,0 +1,37 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	box-sizing: border-box;
+}
+
+.apresentacao {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.apresentacao-conteudo {
+	border: solid 1px blue;
+	display: flex;
+	margin: 20px;
+}
+
+.apresentacao-conteudo-textarea {
+	margin: 20px;
+	height: 200px;
+	width: 300px;
+	border: solid 1px blue;
+}
+
+.apresentacao-codificar {
+	display: flex;
+}
+
+.apresentacao-codificar-botao {
+	width: 50%;
+}
