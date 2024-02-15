@@ -15,8 +15,8 @@
 
 		<section class='apresentacao-conteudo'>
 
-			<textarea class='apresentacao-conteudo-textarea' id="entrada"></textarea>
-			<textarea class='apresentacao-conteudo-textarea' id="saida"></textarea>
+			<textarea placeholder="Digite aqui" class='apresentacao-conteudo-textarea' id="entrada"></textarea>
+			<textarea placeholder="Resultado" class='apresentacao-conteudo-textarea' id="saida"></textarea>
 
 		</section>
 
@@ -24,12 +24,14 @@
 			
 			<button onclick="codificar()" class="apresentacao-codificar-botao">Codificar</button>
 			<button onclick="decodificar()" class="apresentacao-codificar-botao">Decodificar</button>
-			<button onclick="copiar()" class="apresentacao-codificar-botao">Copiar</button>
+			<button onclick="copiar()" class="apresentacao-codificar-botao">Copiar resultado</button>
 
 		</section>
 
 	</main>
-	<footer></footer>
+	<footer class="rodape">
+		<p>Desenvolvido por Gabriel</p>
+	</footer>
 
 	<script src="script.js" defer></script>
 </body>

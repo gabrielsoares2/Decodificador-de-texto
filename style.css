@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+
+	--font-titulo: "Press Start 2P", system-ui;
+	--font-botao: "Roboto", sans-serif;
+
+
+	--cor-fonte: whitesmoke;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -13,19 +24,30 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	background-image: url("img/wallpaper.jpg");
+	background-size: cover;
+}
+
+.apresentacao-titulo {
+	font-family: var(--font-titulo);
+	font-size: 2.rem;
+	color: whitesmoke;
 }
 
 .apresentacao-conteudo {
-	border: solid 1px blue;
 	display: flex;
-	margin: 20px;
+	margin: 1.25rem;
 }
 
 .apresentacao-conteudo-textarea {
-	margin: 20px;
-	height: 200px;
-	width: 300px;
-	border: solid 1px blue;
+	margin: 1.25rem;
+	height: 12.5rem;
+	width: 18.75rem;
+	border: solid 5px darkblue;
+	border-radius: 15px;
+	background-color: black;
+	color: white;
+	font-size: 1.2rem;
 }
 
 .apresentacao-codificar {
@@ -33,5 +55,56 @@ body {
 }
 
 .apresentacao-codificar-botao {
-	width: 50%;
+	width: 9.5rem;
+	margin: 1rem;
+	height: 2.25rem;
+	font-size: 1.2rem;
+	font-family: var(--font-botao);
+	font-weight: 400;
+	background-color: black;
+	color: var(--cor-fonte);
+	border: solid 3px darkblue;
+	border-radius: 10px;
+	white-space: nowrap;
+}
+
+.apresentacao-codificar-botao:hover {
+    background-color: #38419D;
+}
+
+.rodape {
+	padding: 10px;
+	text-align: center;
+	font-family: var(--font-titulo);
+	color: whitesmoke;
+	background-color: black;
+	border: solid 3px darkblue;
+}
+
+@media (max-width: 1000px) {
+
+	.apresentacao-titulo {
+		text-align: center;
+		font-size: 1.2rem;
+		color: whitesmoke;
+	}
+
+	.apresentacao-conteudo {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.apresentacao-codificar {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.apresentacao-codificar-botao {
+		margin: 1px;
+	}
+
+	.rodape {
+		line-height: 1.2;
+	}
+
 }
